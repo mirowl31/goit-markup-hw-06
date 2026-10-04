@@ -1,5 +1,5 @@
 .footer {
-    padding: 100px 0;
+    padding: 96px 0;
     background-color: #2e2f42;
     color: #f4f4fd;
 }
@@ -19,6 +19,15 @@
 }
 
 @media only screen and (min-width: 1158px) {
+.footer {
+    padding: 100px 0;
+}
+
+.footer-container {
+    gap: 0;
+    padding-left: 0;
+}
+
 .footer-first-column {
     margin-right: 120px;
     }

@@ -18,7 +18,7 @@
         ),
         image-set(
             url('../images/hero-bg.jpg') 1x,
-            url('../images/hero-bg.jpg') 2x
+            url('../images/hero-bg@2x.jpg') 2x
         );
 }
 
@@ -31,7 +31,7 @@
             ),
             image-set(
                 url('../images/hero-bg.jpg') 1x,
-                url('../images/hero-bg.jpg') 2x
+                url('../images/hero-bg@2x.jpg') 2x
             );
     }
 }
@@ -45,7 +45,7 @@
             ),
             image-set(
                 url('../images/hero-bg.jpg') 1x,
-                url('../images/hero-bg.jpg') 2x
+                url('../images/hero-bg@2x.jpg') 2x
             );
     }
 }
@@ -65,8 +65,8 @@
 }
 
 .hero-title {
-    width: 100%;
-    margin: 0 auto 48px;
+    max-width: 216px;
+    margin: 0 auto 72px;
     color: #fff;
     font-weight: 700;
     font-size: 36px;
@@ -77,13 +77,20 @@
 @media only screen and (min-width: 768px) {
     .hero-title {
         width: 496px;
-        margin: 0 auto 48px;
+        max-width: none;
+        margin: 0 auto 36px;
         color: #fff;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07143;
         letter-spacing: 0.02em;
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero-title {
+        margin-bottom: 48px;
     }
 }
 

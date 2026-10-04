@@ -22,9 +22,10 @@
 
 .modal {
     position: relative;
-    width: 408px;
+    width: 288px;
+    max-width: calc(100vw - 32px);
     min-height: 582px;
-    padding: 72px 24px 24px;
+    padding: 72px 16px 24px;
     box-sizing: border-box;
     border-radius: 4px;
     background-color: #fcfcfc;
@@ -240,13 +241,16 @@
 }
 
 .modal {
-    width: min(100%, 408px);
+    width: min(100%, 288px);
     max-height: calc(100vh - 32px);
     overflow-y: auto;
 }
 
 @media only screen and (min-width: 768px) {
     .modal {
+        width: min(100%, 408px);
+        padding-right: 24px;
+        padding-left: 24px;
         max-height: calc(100vh - 48px);
     }
 }

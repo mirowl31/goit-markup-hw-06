@@ -26,12 +26,15 @@
 .features-title {
         margin-bottom: 8px;
         color: #2e2f42;
+        font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        text-align: center;
 }
 
 .features-text {
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -87,5 +90,14 @@
 
         .features-icon-wrapper {
                 display: flex;
+        }
+
+        .features-title {
+                font-weight: 500;
+                text-align: left;
+        }
+
+        .features-text {
+                font-weight: 400;
         }
 }

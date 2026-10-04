@@ -93,6 +93,12 @@
     width: 264px;
 }
 
+@media only screen and (min-width: 768px) {
+    .team-list {
+        row-gap: 64px;
+    }
+}
+
 .workers-img {
     width: 264px;
     height: 260px;

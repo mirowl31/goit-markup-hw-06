@@ -551,160 +551,162 @@
     </footer>
 
     <div class="mobile-menu" id="mobile-menu">
-      <button class="mobile-menu-close" type="button" aria-label="Close menu">
-        ×
-      </button>
-      <nav class="mobile-menu-nav" aria-label="Mobile navigation">
-        <ul class="mobile-menu-list">
-          <li>
-            <a class="mobile-menu-link active" href="#features">Features</a>
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close" type="button" aria-label="Close menu">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+          <ul class="mobile-menu-list">
+            <li>
+              <a class="mobile-menu-link active" href="#features">Features</a>
+            </li>
+            <li><a class="mobile-menu-link" href="#team">Team</a></li>
+            <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-contacts">
+          <ul class="mobile-menu-contact-list">
+            <li>
+              <a class="mobile-menu-phone" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-socials">
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="#" aria-label="Instagram">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li><a class="mobile-menu-link" href="#team">Team</a></li>
-          <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="#" aria-label="Twitter">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="#" aria-label="Facebook">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link" href="#" aria-label="LinkedIn">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-      </nav>
-      <address class="mobile-menu-contacts">
-        <a class="mobile-menu-phone" href="tel:+110001111111"
-          >+11 (000) 111-11-11</a
-        >
-        <a class="mobile-menu-email" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-      </address>
-      <ul class="mobile-menu-socials">
-        <li class="mobile-menu-social-item">
-          <a class="mobile-menu-social-link" href="#" aria-label="Instagram">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-menu-social-item">
-          <a class="mobile-menu-social-link" href="#" aria-label="Twitter">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-menu-social-item">
-          <a class="mobile-menu-social-link" href="#" aria-label="Facebook">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-menu-social-item">
-          <a class="mobile-menu-social-link" href="#" aria-label="LinkedIn">
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
 
     <div class="backdrop" id="modal">
-      <form>
-        <div class="modal">
-          <button class="close-button" type="button">
-            <svg class="close-btn-icon" width="8px" height="8px">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
+      <div class="modal">
+        <button class="close-button" type="button">
+          <svg class="close-btn-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-          <p class="modal-title">
-            Leave your contacts and we will call you back
-          </p>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
 
-          <div class="modal-form">
-            <div class="modal-form-field">
-              <label class="modal-label" for="user_name">Name</label>
-              <div class="modal-wrapper">
-                <input
-                  class="modal-input"
-                  type="text"
-                  name="user_name"
-                  id="user_name"
-                  autofocus
-                />
-                <svg class="modal-icon" width="18px" height="24px">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="modal-form-field">
-              <label class="modal-label" for="user_phone">Phone</label>
-              <div class="modal-wrapper">
-                <input
-                  class="modal-input"
-                  type="tel"
-                  name="user_phone"
-                  id="user_phone"
-                />
-                <svg class="modal-icon" width="18px" height="24px">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="modal-form-field">
-              <label class="modal-label" for="user_email">Email</label>
-              <div class="modal-wrapper">
-                <input
-                  class="modal-input"
-                  type="email"
-                  name="user_email"
-                  id="user_email"
-                />
-                <svg class="modal-icon" width="18px" height="24px">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="modal-form-field modal-form-field-comment">
-              <label class="modal-label" for="user_comment">Comment</label>
-              <textarea
-                style="resize: none"
-                class="modal-form-comment"
-                id="user_comment"
-                name="user_comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-
-            <div class="modal-form-field modal-form-field-policy">
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label class="modal-label" for="user_name">Name</label>
+            <div class="modal-wrapper">
               <input
-                class="checkbox sr-only"
-                type="checkbox"
-                id="user_agree"
-                name="user_agree"
+                class="modal-input"
+                type="text"
+                name="user_name"
+                id="user_name"
+                autofocus
               />
-              <label class="modal-form-policy" for="user_agree">
-                <span class="modal-form-checkbox">
-                  <svg
-                    class="modal-form-checkbox-icon"
-                    width="10px"
-                    height="8px"
-                  >
-                    <use href="./images/icons.svg#icon-check"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the
-                <a
-                  class="modal-form-link"
-                  href="./policy.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Privacy Policy
-                </a>
-              </label>
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
             </div>
           </div>
-          <button class="modal-form-submit" type="button">Send</button>
-        </div>
-      </form>
+
+          <div class="modal-form-field">
+            <label class="modal-label" for="user_phone">Phone</label>
+            <div class="modal-wrapper">
+              <input
+                class="modal-input"
+                type="tel"
+                name="user_phone"
+                id="user_phone"
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-label" for="user_email">Email</label>
+            <div class="modal-wrapper">
+              <input
+                class="modal-input"
+                type="email"
+                name="user_email"
+                id="user_email"
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field modal-form-field-comment">
+            <label class="modal-label" for="user_comment">Comment</label>
+            <textarea
+              style="resize: none"
+              class="modal-form-comment"
+              id="user_comment"
+              name="user_comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-form-field modal-form-field-policy">
+            <input
+              class="checkbox sr-only"
+              type="checkbox"
+              id="user_agree"
+              name="user_agree"
+            />
+            <label class="modal-form-policy" for="user_agree">
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10px" height="8px">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="modal-form-link"
+                href="./policy.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy
+              </a>
+            </label>
+          </div>
+          <button class="modal-form-submit" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
