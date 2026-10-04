@@ -27,8 +27,8 @@
         margin-bottom: 8px;
         color: #2e2f42;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 1.2;
+        font-size: 24px;
+        line-height: 1.33;
         letter-spacing: 0.02em;
         text-align: center;
 }
@@ -58,10 +58,6 @@
         display: none;
 }
 
-.features-title {
-        font-size: 20px;
-}
-
 @media only screen and (min-width: 768px) {
         .features-list {
                 flex-direction: row;
@@ -71,6 +67,10 @@
 
         .features-item {
                 width: calc((100% - 24px) / 2);
+        }
+
+        .features-title {
+                text-align: left;
         }
 }
 
@@ -94,6 +94,8 @@
 
         .features-title {
                 font-weight: 500;
+                font-size: 20px;
+                line-height: 1.2;
                 text-align: left;
         }
 
