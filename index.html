@@ -47,7 +47,7 @@
             </li>
           </ul>
         </address>
-        <button class="burger-menu-button">
+        <button class="burger-menu-button" type="button" aria-label="Open menu">
           <svg class="burger-menu-icon" width="24px" height="24px">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
@@ -63,7 +63,7 @@
         </div>
       </section>
 
-      <section id="features" class="features hide">
+      <section id="features" class="features">
         <div class="container">
           <h2 class="sr-only">Our features</h2>
           <ul class="features-list">
@@ -122,7 +122,7 @@
         </div>
       </section>
 
-      <section id="team" class="team hide">
+      <section id="team" class="team">
         <div class="container">
           <h2 class="our-team">Our Team</h2>
 
@@ -131,6 +131,7 @@
               <img
                 class="workers-img"
                 src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -175,6 +176,7 @@
               <img
                 class="workers-img"
                 src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -219,6 +221,7 @@
               <img
                 class="workers-img"
                 src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -275,6 +278,7 @@
               <img
                 class="workers-img"
                 src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -318,7 +322,7 @@
         </div>
       </section>
 
-      <section id="portfolio" class="portfolio hide">
+      <section id="portfolio" class="portfolio">
         <div class="container">
           <h2 class="head-portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -327,6 +331,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg 1x,
+                    ./images/portfolio-1.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -348,6 +356,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg 1x,
+                    ./images/portfolio-2.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -369,6 +381,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg 1x,
+                    ./images/portfolio-3.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -390,6 +406,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg 1x,
+                    ./images/portfolio-4.jpg 2x
+                  "
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -411,6 +431,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg 1x,
+                    ./images/portfolio-5.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -432,6 +456,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio-6.jpg 1x,
+                    ./images/portfolio-6.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -511,7 +539,7 @@
               placeholder="E-mail"
               aria-label="email"
             />
-            <button class="footer-button" type="submit">
+            <button class="footer-button" type="button">
               Subscribe
               <svg class="send-icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -521,6 +549,59 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-close" type="button" aria-label="Close menu">
+        ×
+      </button>
+      <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+        <ul class="mobile-menu-list">
+          <li>
+            <a class="mobile-menu-link active" href="#features">Features</a>
+          </li>
+          <li><a class="mobile-menu-link" href="#team">Team</a></li>
+          <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+      <address class="mobile-menu-contacts">
+        <a class="mobile-menu-phone" href="tel:+110001111111"
+          >+11 (000) 111-11-11</a
+        >
+        <a class="mobile-menu-email" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+      </address>
+      <ul class="mobile-menu-socials">
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="#" aria-label="Instagram">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="#" aria-label="Twitter">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="#" aria-label="Facebook">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-item">
+          <a class="mobile-menu-social-link" href="#" aria-label="LinkedIn">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <div class="backdrop" id="modal">
       <form>
@@ -621,7 +702,7 @@
               </label>
             </div>
           </div>
-          <button class="modal-form-submit" type="submit">Send</button>
+          <button class="modal-form-submit" type="button">Send</button>
         </div>
       </form>
     </div>

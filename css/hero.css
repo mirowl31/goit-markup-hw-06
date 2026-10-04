@@ -10,6 +10,46 @@
     background-size: cover;
 }
 
+.hero {
+    background-image: linear-gradient(
+            180deg,
+            rgba(46, 47, 66, 0.7) 0%,
+            rgba(46, 47, 66, 0.7) 100%
+        ),
+        image-set(
+            url('../images/hero-bg.jpg') 1x,
+            url('../images/hero-bg.jpg') 2x
+        );
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(
+                180deg,
+                rgba(46, 47, 66, 0.7) 0%,
+                rgba(46, 47, 66, 0.7) 100%
+            ),
+            image-set(
+                url('../images/hero-bg.jpg') 1x,
+                url('../images/hero-bg.jpg') 2x
+            );
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero {
+        background-image: linear-gradient(
+                180deg,
+                rgba(46, 47, 66, 0.7) 0%,
+                rgba(46, 47, 66, 0.7) 100%
+            ),
+            image-set(
+                url('../images/hero-bg.jpg') 1x,
+                url('../images/hero-bg.jpg') 2x
+            );
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .hero {
         height: 436px;

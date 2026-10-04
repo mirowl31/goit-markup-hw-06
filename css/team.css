@@ -73,3 +73,43 @@
 .team-social-link:focus {
     background-color: #404bbf;
 }
+
+.team {
+    padding: 96px 0;
+}
+
+.our-team {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+}
+
+.workers {
+    flex: 0 0 264px;
+    width: 264px;
+}
+
+.workers-img {
+    width: 264px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.team-social-list {
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1158px) {
+    .team {
+        padding: 120px 0;
+    }
+
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}
